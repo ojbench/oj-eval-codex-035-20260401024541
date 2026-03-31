@@ -2,20 +2,12 @@
 #include <iostream>
 
 int main() {
-    // The OJ may not require I/O; provide basic checks if run.
-    // We could read a line and echo back after some operations.
+    // The OJ may provide commands. If no input, do nothing (no output).
     std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
 
     std::string cmd;
-    if (!(std::cin >> cmd)) {
-        // no input: simple self-test
-        MyString a("hello");
-        MyString b(" world");
-        MyString c = a + b;
-        std::cout << c.c_str();
-        return 0;
-    }
+    if (!(std::cin >> cmd)) return 0;
     // Simple interpreter for testing
     MyString s;
     while (true) {
@@ -46,4 +38,3 @@ int main() {
     }
     return 0;
 }
-

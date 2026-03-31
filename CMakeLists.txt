@@ -10,5 +10,4 @@ add_executable(code
     src/MyString.hpp
 )
 
-target_compile_options(code PRIVATE -O2 -pipe -static -s)
-
+target_compile_options(code PRIVATE -O2 -pipe -s)
